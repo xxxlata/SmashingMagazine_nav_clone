@@ -70,6 +70,17 @@ picture :nth-child(2){
     border-style: none;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+.menu_button{
+    border-radius: 10px;
+    font-size:1.3rem;
+    font-weight: bold;
+    padding:  10px 10px 10px 10px;
+    color: white;
+    background-color: rgb(168, 46, 46);
+    border-color: rgb(168, 46, 46);
+    border-style: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 .search_box{
     display: flex;
@@ -113,7 +124,7 @@ input {
 
 .sec_menu{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -135,7 +146,11 @@ input {
         display: grid;
         grid-template-columns: 0.5fr 4fr 2fr;
     }
+    .sec_menu li:nth-child(6){
+        display: none;
+    }
 }
+
 @media screen and (max-width: 1500px) {
     .nav :nth-child(5) {
         display: none;
@@ -143,7 +158,15 @@ input {
     .logo {
         margin-left: 15px;
     }
+    .sec_menu li:last-child {
+        display: none;
+    }
 
+}
+@media screen and (max-width: 1400px) {
+    .sec_menu li:nth-child(9){
+        display: none;
+    }
 }
 @media screen and (max-width: 1038px) {
     .nav :nth-child(4) {
@@ -167,4 +190,57 @@ input {
     .nav > li {
         display: none;
     }
+    .nav > li:last-child {
+        display: inline-block;
+    }
+}
+@media screen and (max-width :415px) {
+    .sec_kat {
+        box-shadow: none;
+    }
+    .more_button {
+        display: none;
+    }
+    .sec_menu li:nth-child(5){
+        display: none;
+    }
+    .sec_menu li:nth-child(6){
+        display: none;
+    }
+    .sec_menu li:nth-child(7){
+        display: none;
+    }
+    .sec_menu li:nth-child(8){
+        display: none;
+    }
+    .sec_menu li:nth-child(9){
+        display: none;
+    }
+    .sec_menu li:nth-child(10){
+        display: none;
+    }
+    .sec_menu li:nth-child(11){
+        display: none;
+    }
+    .sec_menu li:nth-child(12){
+        display: none;
+    }
+    .sec_menu li:nth-child(13){
+        display: none;
+    }
+    .sec_menu li:nth-child(14){
+        display: none;
+    }
+    .sec_menu li:nth-child(15){
+        display: none;
+    }
+    .sec_menu li:nth-child(16){
+        display: none;
+    }
+}
+@media screen and (min-width : 416px) {
+    .menu_button {
+        display: none;
+    }
+
 }
