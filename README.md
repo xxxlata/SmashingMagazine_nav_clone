@@ -15,3 +15,4 @@
 ![src](screenshot/1024x1366_clone.png?raw=true)
 
 ### 모바일 화면
+![src](screenshot/414x736_clone.png?raw=true)
