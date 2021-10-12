@@ -18,7 +18,6 @@ body{
     display: grid;
     grid-template-columns: 1.7fr 4fr 2fr;
     background-color:#d33a2c;
-    height: 7rem;
 }
 
 .logo{
@@ -54,7 +53,6 @@ picture :nth-child(2){
 .nav li {
     padding: 10px 20px 0 0 ;
     font-size: 1.3rem;
-    margin:0 10px 0 10px;
     font-weight: bold;
     
 }
@@ -86,12 +84,12 @@ picture :nth-child(2){
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
 .search{
-    width: 22rem;
+    width: 100%;
     height: 4rem;
     background-color: white;
     border-radius: 20px;
@@ -149,6 +147,13 @@ input {
     .sec_menu li:nth-child(6){
         display: none;
     }
+    .more_button {
+        display: block;
+    
+    }
+    .menu_button{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -187,20 +192,36 @@ input {
     }
 }
 @media screen and (max-width: 650px) {
+    .top_nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 0 1rem 1rem;
+
+    }
+    .search_box{
+        align-self: flex-end;
+        width: 95%;
+    }
     .nav > li {
         display: none;
     }
     .nav > li:last-child {
         display: inline-block;
     }
+    .more_button {
+        display: none;
+    }
+
+    .menu_button{
+        display: block;
+    }
 }
 @media screen and (max-width :415px) {
     .sec_kat {
         box-shadow: none;
     }
-    .more_button {
-        display: none;
-    }
+
     .sec_menu li:nth-child(5){
         display: none;
     }
@@ -238,9 +259,8 @@ input {
         display: none;
     }
 }
-@media screen and (min-width : 416px) {
-    .menu_button {
-        display: none;
-    }
 
+
+@media screen and (max-width: ) {
+    
 }
